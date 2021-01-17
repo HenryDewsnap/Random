@@ -1,3 +1,5 @@
+//FOR THIS CODE TO WORK YOU MUST HAVE A .csv WITH QUOTES IN IT SEPERATED BY COMMAS WITH NO SPACINGS UNECISSARILY USED AFTER OR BEFORE COMMAS. (file location must be in the same folder as the program.)
+
 import random
 import csv
 
