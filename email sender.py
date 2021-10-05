@@ -14,10 +14,11 @@ with open(textfile) as fp:
 msg['Subject'] = 'The contents of %s' % textfile
 msg['From'] = "Your Email"
 
+s = smtplib.SMTP('localhost')
+s.login("@email", "password")
+
 for recipient in recipients:
     msg['To'] = recipient
-
-    s = smtplib.SMTP('localhost')
-    s.login("@email", "password")
     s.send_message(msg)
-    s.quit()
+
+s.quit()
